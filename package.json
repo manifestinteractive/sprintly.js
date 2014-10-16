@@ -1,0 +1,38 @@
+{
+	"name": "SprintlyJS",
+	"description": "Sprint.ly API Javascript Library",
+	"homepage": "https://github.com/manifestinteractive/sprintly.js",
+	"version": "0.1.0",
+	"keywords": [
+		"sprintly",
+		"api"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/manifestinteractive/sprintly.js#stable"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/manifestinteractive/sprintly.js/blob/master/LICENSE-MIT"
+		}
+	],
+	"author": {
+		"name": "Manifest Interactive, LLC,",
+		"email": "hello@manifestinteractive.com",
+		"url": "http://manifestinteractive.com"
+	},
+	"bugs": {
+		"url": "https://github.com/manifestinteractive/sprintly.js/issues",
+		"email": "hello@manifestinteractive.com"
+	},
+	"devDependencies": {
+		"grunt": "^0.4.5",
+		"grunt-cli": "*",
+		"grunt-contrib-jshint": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-contrib-concat": "*",
+		"grunt-contrib-uglify": "*",
+		"jshint-stylish": "^0.4.0"
+	}
+}

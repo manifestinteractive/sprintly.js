@@ -1,0 +1,16 @@
+############################################
+## Generic System Ignores
+syntax: glob
+
+!.gitignore
+# XCode user data
+**.pbxuser
+**.mode?v?
+**.perspectivev?
+# documentation
+**.docset/*
+.DS_Store
+Thumbs.db
+.idea
+node_modules
+.sass-cache
