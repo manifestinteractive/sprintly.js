@@ -8,6 +8,14 @@ This is a Javascript Library to make calls to [Sprint.ly's API](https://github.c
 
 __NOTE:__ Sprintly.js currently requires [jQuery](http://jquery.com/) for CORS AJAX Calls ( this was easier than writing something custom ... feel free to contribute to remove this requirement ).
 
+Sprintly.js is ready to use and you can start by downloading either the __[sprintly.js](https://raw.githubusercontent.com/manifestinteractive/sprintly.js/stable/lib/sprintly.js)__ or __[sprintly.min.js](https://raw.githubusercontent.com/manifestinteractive/sprintly.js/stable/lib/sprintly.min.js)__ file into your project.
+
+If you would like to modify it, see the __[Build Instructions](#build)__ below.
+
+Enjoy !!!
+
+-- Peter Schmalfeldt [@mrmidi](https://twitter.com/mrmidi)
+
 Usage Instructions (TOC):
 ---
 
@@ -347,7 +355,7 @@ Delete blocking from an item
 var deleted_blocking = sprintly_api.blocking.delete( item_id, blocking_id );
 ```
 
-Node.js Build Requirements
+<a name="build"></a>Node.js Build Requirements
 ---
 
 * [Node.js v10+](http://nodejs.org/) ( For Grunt Development )
