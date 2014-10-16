@@ -69,6 +69,7 @@ __EXAMPLE HTML:__
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="lib/sprintly.js"></script>
         <script>
+            // You'll want to do something more secure than this, but you get the idea
             sprintly_api.auth.email = 'me@myemail.com';
             sprintly_api.auth.api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
         </script>
