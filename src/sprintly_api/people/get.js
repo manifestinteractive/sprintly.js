@@ -33,7 +33,7 @@ sprintly_api.people.get = function(person_id)
 			},
 			function(error)
 			{
-				sprintly_api.people.data.person = null;
+				sprintly_api.people.data.person = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'People', 'Get Error: ' + error);
 				sprintly_api.debug('error', 'Get Person Error: ' + error);
 			}

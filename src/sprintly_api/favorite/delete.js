@@ -41,7 +41,7 @@ sprintly_api.favorite.delete = function(item_id, favorite_id)
 			},
 			function(error)
 			{
-				sprintly_api.favorite.data.deleted_favorite = null;
+				sprintly_api.favorite.data.deleted_favorite = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Favorite', 'Delete Error: ' + error);
 				sprintly_api.debug('error', 'Delete Favorite Error: ' + error);
 			},

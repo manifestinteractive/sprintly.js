@@ -41,7 +41,7 @@ sprintly_api.blocking.delete = function(item_id, blocking_id)
 			},
 			function(error)
 			{
-				sprintly_api.blocking.data.deleted_blocking = null;
+				sprintly_api.blocking.data.deleted_blocking = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Blocking', 'Delete Error: ' + error);
 				sprintly_api.debug('error', 'Delete Blocking Error: ' + error);
 			},

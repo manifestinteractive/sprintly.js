@@ -34,7 +34,7 @@ sprintly_api.favorite.list = function(item_id)
 			},
 			function(error)
 			{
-				sprintly_api.favorite.data.favorite_list = null;
+				sprintly_api.favorite.data.favorite_list = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Favorite', 'List Error: ' + error);
 				sprintly_api.debug('error', 'List Favorite Error: ' + error);
 			}

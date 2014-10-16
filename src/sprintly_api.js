@@ -132,6 +132,9 @@ var sprintly_api = {
 			sprintly_api.track('API', 'AJAX', 'Error: ' + errorThrown);
 			sprintly_api.debug('error', 'AJAX Error: ' + errorThrown);
 
+			sprintly_api.track('API', 'AJAX', 'Error Response: ' + JSON.stringify(sprintly_api.ajax.responseJSON));
+			sprintly_api.debug('error', sprintly_api.ajax.responseJSON);
+
 			sprintly_api.ajax_in_process = false;
 
 			// This is an AJAX Abort, and that's OK
@@ -158,6 +161,6 @@ var sprintly_api = {
 	},
 	track: function(category, action, label, value)
 	{
-		// @TODO: Put your custom Google Analytics here
+		// @TODO: Put your custom analytics here
 	}
 };

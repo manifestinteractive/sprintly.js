@@ -107,7 +107,7 @@ sprintly_api.item.set = function(item_id, args)
 			},
 			function(error)
 			{
-				sprintly_api.item.data.set_item = null;
+				sprintly_api.item.data.set_item = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Item', 'Set Error: ' + error);
 				sprintly_api.debug('error', 'Set Item Error: ' + error);
 			},

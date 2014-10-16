@@ -41,7 +41,7 @@ sprintly_api.blocking.get = function(item_id, blocking_id)
 			},
 			function(error)
 			{
-				sprintly_api.blocking.data.item_blocking = null;
+				sprintly_api.blocking.data.item_blocking = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Blocking', 'Get Error: ' + error);
 				sprintly_api.debug('error', 'Get Person Error: ' + error);
 			}

@@ -82,7 +82,7 @@ sprintly_api.item.search = function(filters)
 			},
 			function(error)
 			{
-				sprintly_api.item.data.search_results = null;
+				sprintly_api.item.data.search_results = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Item', 'Search Error: ' + error);
 				sprintly_api.debug('error', 'Item Search Error: ' + error);
 			},

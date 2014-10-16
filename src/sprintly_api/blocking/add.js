@@ -33,7 +33,7 @@ sprintly_api.blocking.add = function(item_id)
 			},
 			function(error)
 			{
-				sprintly_api.blocking.data.new_blocking = null;
+				sprintly_api.blocking.data.new_blocking = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Blocking', 'Add Blocking: ' + error);
 				sprintly_api.debug('error', 'Add Blocking Error: ' + error);
 			},

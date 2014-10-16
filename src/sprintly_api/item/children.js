@@ -44,7 +44,7 @@ sprintly_api.item.children = function(item_id)
 			},
 			function(error)
 			{
-				sprintly_api.item.data.item_children = null;
+				sprintly_api.item.data.item_children = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Item', 'Children Error: ' + error);
 				sprintly_api.debug('error', 'Item Children Error: ' + error);
 			}

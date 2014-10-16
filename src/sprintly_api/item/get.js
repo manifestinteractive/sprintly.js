@@ -34,7 +34,7 @@ sprintly_api.item.get = function(item_id)
 			},
 			function(error)
 			{
-				sprintly_api.item.data.get_item = null;
+				sprintly_api.item.data.get_item = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Item', 'Get Error: ' + error);
 				sprintly_api.debug('error', 'Get Item Error: ' + error);
 			}
