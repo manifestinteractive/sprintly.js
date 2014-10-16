@@ -25,7 +25,7 @@ sprintly_api.people.list = function()
 			},
 			function(error)
 			{
-				sprintly_api.people.data.people_list = null;
+				sprintly_api.people.data.people_list = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'People', 'List Error: ' + error);
 				sprintly_api.debug('error', 'List People Error: ' + error);
 			}

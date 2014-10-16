@@ -2,7 +2,7 @@
 	"name": "SprintlyJS",
 	"description": "Sprint.ly API Javascript Library",
 	"homepage": "https://github.com/manifestinteractive/sprintly.js",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"keywords": [
 		"sprintly",
 		"api"

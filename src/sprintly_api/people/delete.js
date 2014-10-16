@@ -36,7 +36,7 @@ sprintly_api.people.delete = function(person_id)
 			},
 			function(error)
 			{
-				sprintly_api.people.data.deleted_person = null;
+				sprintly_api.people.data.deleted_person = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'People', 'Delete Error: ' + error);
 				sprintly_api.debug('error', 'Delete People Error: ' + error);
 			},

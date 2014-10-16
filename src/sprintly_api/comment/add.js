@@ -40,7 +40,7 @@ sprintly_api.comment.add = function(item_id, comment)
 			},
 			function(error)
 			{
-				sprintly_api.comment.data.new_comment = null;
+				sprintly_api.comment.data.new_comment = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Comment', 'Add Comment: ' + error);
 				sprintly_api.debug('error', 'Add Comment Error: ' + error);
 			},

@@ -41,7 +41,7 @@ sprintly_api.favorite.get = function(item_id, favorite_id)
 			},
 			function(error)
 			{
-				sprintly_api.favorite.data.user_data = null;
+				sprintly_api.favorite.data.user_data = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Favorite', 'Get Error: ' + error);
 				sprintly_api.debug('error', 'Get Person Error: ' + error);
 			}

@@ -112,7 +112,7 @@ sprintly_api.item.add = function(args)
 			},
 			function(error)
 			{
-				sprintly_api.item.data.new_item = null;
+				sprintly_api.item.data.new_item = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Item', 'Add Error: ' + error);
 				sprintly_api.debug('error', 'Add Item Error: ' + error);
 			},

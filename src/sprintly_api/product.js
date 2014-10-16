@@ -74,7 +74,7 @@ sprintly_api.product = {
 			},
 			function(error)
 			{
-				sprintly_api.product.data = null;
+				sprintly_api.product.data = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Product', 'List Error: ' + error);
 				sprintly_api.debug('error', 'Product List Error: ' + error);
 			}

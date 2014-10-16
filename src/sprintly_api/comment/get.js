@@ -41,7 +41,7 @@ sprintly_api.comment.get = function(item_id, comment_id)
 			},
 			function(error)
 			{
-				sprintly_api.comment.data.item_comment = null;
+				sprintly_api.comment.data.item_comment = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Comment', 'Get Error: ' + error);
 				sprintly_api.debug('error', 'Get Comment Error: ' + error);
 			}

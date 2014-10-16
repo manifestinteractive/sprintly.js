@@ -41,7 +41,7 @@ sprintly_api.comment.delete = function(item_id, comment_id)
 			},
 			function(error)
 			{
-				sprintly_api.comment.data.deleted_comment = null;
+				sprintly_api.comment.data.deleted_comment = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Comment', 'Delete Error: ' + error);
 				sprintly_api.debug('error', 'Delete Comment Error: ' + error);
 			},

@@ -49,6 +49,10 @@ Usage Instructions (TOC):
     * [Get a Specific Blocking Item](#blocking-get)
     * [Add a New Blocking Status](#blocking-add)
     * [Delete a Specific Blocking Status](#blocking-delete)
+* __[Optional Settings](#settings)__
+	* [Configuration Options](#settings-config)
+	* [Debugging](#settings-debugging)
+    * [Google Analytics](#settings-analytics)
 
 <a name="authentication"></a>[» AUTHENTICATION](https://github.com/sprintly/sprint.ly-docs/blob/master/API/Authentication.mkd)
 ---
@@ -355,6 +359,39 @@ Delete blocking from an item
 ```javascript
 var deleted_blocking = sprintly_api.blocking.delete( item_id, blocking_id );
 ```
+
+<a name="settings"></a>» OPTIONAL SETTINGS
+---
+
+There are also a few extra things you can do with this library:
+
+#### › <a name="settings-config"></a>Configuration Options
+
+Here are some settings you can change:
+
+* `sprintly_api.auth.email` ( REQUIRED ) This is your Sprintly API Email
+* `sprintly_api.auth.api_key` ( REQUIRED ) This is your Sprintly API Key
+* `sprintly_api.settings.time_until_stale` ( OPTIONAL ) Used to cache results from list function, defaults to 10000 ( 10 seconds )
+
+#### › <a name="settings-debugging"></a>Debugging
+
+This library sends all debugging information to
+
+```javascript
+sprintly_api.debug( level, message );
+```
+
+You can connect this debugger to your own framework by adding your own custom code to that function.
+
+#### › <a name="settings-analytics"></a>Google Analytics
+
+This library sends analytic information to
+
+```javascript
+sprintly_api.track( category, action, label, value );
+```
+
+You can connect this tracker to your own framework by adding your own custom code to that function.
 
 <a name="build"></a>Node.js Build Requirements
 ---

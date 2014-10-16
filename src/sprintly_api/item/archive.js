@@ -7,7 +7,7 @@
  *
  * EXAMPLE:
  *
- * var archive_item = sprintly_api.item.archive( 123 );
+ * var my_item = sprintly_api.item.archive( 123 );
  *
  * Archive item response saved to: sprintly_api.item.data.archive_item
  *
@@ -35,7 +35,7 @@ sprintly_api.item.archive = function(item_id)
 			},
 			function(error)
 			{
-				sprintly_api.item.data.archive_item = null;
+				sprintly_api.item.data.archive_item = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Item', 'Archive Error: ' + error);
 				sprintly_api.debug('error', 'Archive Item Error: ' + error);
 			},

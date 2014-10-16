@@ -34,7 +34,7 @@ sprintly_api.comment.list = function(item_id)
 			},
 			function(error)
 			{
-				sprintly_api.comment.data.item_comments = null;
+				sprintly_api.comment.data.item_comments = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'Comment', 'List Error: ' + error);
 				sprintly_api.debug('error', 'List Comment Error: ' + error);
 			}

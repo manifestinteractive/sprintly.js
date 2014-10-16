@@ -71,7 +71,7 @@ sprintly_api.people.invite = function(first_name, last_name, email, is_admin)
 			},
 			function(error)
 			{
-				sprintly_api.people.data.invite = null;
+				sprintly_api.people.data.invite = sprintly_api.ajax.responseJSON;
 				sprintly_api.track('API', 'People', 'Invite People: ' + error);
 				sprintly_api.debug('error', 'Invite People Error: ' + error);
 			},
